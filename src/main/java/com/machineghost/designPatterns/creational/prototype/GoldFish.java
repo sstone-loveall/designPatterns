@@ -1,5 +1,9 @@
 package com.machineghost.designPatterns.creational.prototype;
 
+/**
+ * Concrete class that extends superclass Animal
+ * @author S. Stone-Loveall
+ */
 public class GoldFish extends Animal {
 	
 	private String swimSpeed;
