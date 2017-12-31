@@ -7,7 +7,7 @@ import java.sql.SQLException;
 /**
  * Demo of Singleton pattern used for connections to Derby in-memory DB
  * @author Pluralsight
- *
+ * Credit:Pluralsight
  */
 public class DBSingleton {
 
