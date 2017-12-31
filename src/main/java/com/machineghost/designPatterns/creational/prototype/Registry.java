@@ -7,7 +7,6 @@ import java.util.Map;
  * Prototype registry. In this example, instances of "Animal" objects are conjured and kept in a HashMap.
  * Callers using the registry will not need to instantiate Animal type objects.
  * @author S. Stone-Loveall
- *
  */
 public class Registry {
 	private Map<AnimalType, Animal> animals = new HashMap<AnimalType, Animal>();
@@ -19,7 +18,7 @@ public class Registry {
 	public Animal createAnimal (AnimalType type) {
 		Animal animal = null;
 		try {
-			// Clones an existing instance for the given type
+			// clones an existing instance for the given type
 			animal = (Animal)(animals.get(type)).clone();
 		}
 		catch (CloneNotSupportedException e) {

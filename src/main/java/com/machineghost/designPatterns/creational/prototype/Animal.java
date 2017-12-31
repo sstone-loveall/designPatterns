@@ -1,5 +1,9 @@
 package com.machineghost.designPatterns.creational.prototype;
 
+/**
+ * Abstract superclass to represent type Animal
+ * @author S. Stone-Loveall
+ */
 public abstract class Animal implements Cloneable {
 	private String species;
 	private String genus;
