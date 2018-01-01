@@ -11,10 +11,9 @@ public class HouseCatFeeder implements IFeeder {
 	private String selectedFood;
 	
 	public void giveFood(IFoodSelector foodSelector) {
-		isFed = true;
 		selectedFood = foodSelector.getSelectedFood();
-		
-		// do the food giving stuff
+		scoopFoodIntoDish();
+		isFed = true;
 	}
 
 	public boolean getIsFed() {
@@ -23,5 +22,9 @@ public class HouseCatFeeder implements IFeeder {
 	
 	public String getSelectedFood() {
 		return selectedFood;
+	}
+	
+	private void scoopFoodIntoDish() {
+		// do some unique scooping behaviors
 	}
 }

@@ -11,10 +11,9 @@ public class GoldFishFeeder implements IFeeder {
 	private String selectedFood;
 	
 	public void giveFood(IFoodSelector foodSelector) {
-		isFed = true;
 		selectedFood = foodSelector.getSelectedFood();
-		
-		// do the food giving stuff
+		sprinkleFoodOverWater();
+		isFed = true;
 	}
 	
 	public boolean getIsFed() {
@@ -23,5 +22,9 @@ public class GoldFishFeeder implements IFeeder {
 
 	public String getSelectedFood() {
 		return selectedFood;
+	}
+	
+	private void sprinkleFoodOverWater() {
+		// do some unique sprinkle behaviors
 	}
 }
