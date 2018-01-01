@@ -1,7 +1,7 @@
 package com.machineghost.designPatterns.structural.bridge;
 
 /**
- * Demonstration of the bridge pattern. Illustrated with the concept of feeding animals. 
+ * Demonstration of the bridge pattern. Illustrated with the concept of feeding pets. 
  * @author S. Stone-Loveall
  *
  */
@@ -10,11 +10,11 @@ public class BridgeDemo {
 	public static void main(String[] args) {
 
 		IFoodSelector foodSelector = new HouseCatFoodSelector();
-		IFeeder feeder = new HouseCatFeeder();
+		IFeeder feeder = new PetFeeder();
 		feeder.giveFood(foodSelector);
 		
 		IFoodSelector anotherFoodSelector = new GoldFishFoodSelector();
-		IFeeder anotherFeeder = new GoldFishFeeder();
+		IFeeder anotherFeeder = new PetFeeder();
 		anotherFeeder.giveFood(anotherFoodSelector);
 		
 		// demonstrate the behaviors were bridged

@@ -5,17 +5,17 @@ package com.machineghost.designPatterns.structural.bridge;
  * @author S. Stone-Loveall
  *
  */
-public class GoldFishFeeder implements IFeeder {
-	
+public class PetFeeder implements IFeeder {
+
 	private boolean isFed;
 	private String selectedFood;
-	
+
 	public void giveFood(IFoodSelector foodSelector) {
 		selectedFood = foodSelector.getSelectedFood();
-		sprinkleFoodOverWater();
+		handFoodToPet();
 		isFed = true;
 	}
-	
+
 	public boolean getIsFed() {
 		return isFed;
 	}
@@ -24,7 +24,9 @@ public class GoldFishFeeder implements IFeeder {
 		return selectedFood;
 	}
 	
-	private void sprinkleFoodOverWater() {
-		// do some unique sprinkle behaviors
+	private void handFoodToPet() {
+		// do some food giving activity unique to pets
+		// you can imagine another feeder existing for zoo animals
 	}
+
 }
