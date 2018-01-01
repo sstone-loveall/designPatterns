@@ -28,5 +28,4 @@ public class PetFeeder implements IFeeder {
 		// do some food giving activity unique to pets
 		// you can imagine another feeder existing for zoo animals
 	}
-
 }
