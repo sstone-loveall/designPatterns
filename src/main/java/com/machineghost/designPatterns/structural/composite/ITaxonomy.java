@@ -5,6 +5,6 @@ package com.machineghost.designPatterns.structural.composite;
  * @author S. Stone-Loveall
  *
  */
-public abstract class Taxonomy {
-	public abstract String showTaxonomy();
+public interface ITaxonomy {
+	public String showTaxonomy();
 }

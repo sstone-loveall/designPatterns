@@ -9,34 +9,33 @@ import java.util.StringJoiner;
  * @author S. Stone-Loveall
  *
  */
-public class Genus extends Taxonomy {
+public class Genus implements ITaxonomy {
 
 	private String title;
-	List<Taxonomy> species = new ArrayList<Taxonomy>();
+	List<ITaxonomy> species = new ArrayList<ITaxonomy>();
 	
 	public Genus(String title) {
 		this.title = title;
 	}
 	
-	@Override
+	public String getTitle() {
+		return title;
+	}
+	
 	public String showTaxonomy() {
 		StringJoiner output = new StringJoiner(", ");
 
-		for (Taxonomy s : species) {
+		for (ITaxonomy s : species) {
 			output.add(getTitle() + " " + s.showTaxonomy());
 		}
 		return output.toString();
 	}
 	
-	public void addSpecies(Taxonomy taxonomyComponent) {
+	public void addSpecies(ITaxonomy taxonomyComponent) {
 		species.add(taxonomyComponent);
 	}
 	
-	public void removeSpecies(Taxonomy taxonomyComponent) {
+	public void removeSpecies(ITaxonomy taxonomyComponent) {
 		species.remove(taxonomyComponent);
-	}
-
-	public String getTitle() {
-		return title;
 	}
 }

@@ -5,7 +5,7 @@ package com.machineghost.designPatterns.structural.composite;
  * @author S. Stone-Loveall
  *
  */
-public class Species extends Taxonomy {
+public class Species implements ITaxonomy {
 
 	private String title;
 
@@ -17,7 +17,6 @@ public class Species extends Taxonomy {
 		return title;
 	}
 	
-	@Override
 	public String showTaxonomy() {
 		 return getTitle();
 	}
