@@ -7,6 +7,7 @@ package com.machineghost.designPatterns.creational.prototype;
 public class HouseCat extends Animal {
 	
 	private String napTime;
+	private String feedingTime;
 	
 	public String getNapTime() {
 		return napTime;
@@ -14,5 +15,13 @@ public class HouseCat extends Animal {
 	
 	public void setNapTime(String napTime) {
 		this.napTime = napTime;
+	}
+
+	public String getFeedingTime() {
+		return feedingTime;
+	}
+
+	public void setFeedingTime(String feedingTime) {
+		this.feedingTime = feedingTime;
 	}
 }

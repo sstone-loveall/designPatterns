@@ -6,5 +6,6 @@ package com.machineghost.designPatterns.creational.prototype;
 public enum AnimalType {
 	HOUSECAT,
 	GOLDFISH,
-	SONGBIRD
+	SONGBIRD,
+	DOGGO
 }

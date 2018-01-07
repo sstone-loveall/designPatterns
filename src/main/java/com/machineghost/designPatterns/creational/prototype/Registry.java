@@ -40,6 +40,12 @@ public class Registry {
 		fish.setSpecies("auratus");
 		fish.setSwimSpeed("leisurely");
 		animals.put(AnimalType.GOLDFISH, fish);
+		
+		Doggo dog = new Doggo();
+		dog.setGenus("canis");
+		dog.setSpecies("familiaris");
+		dog.setFeedingTime("morning");
+		animals.put(AnimalType.DOGGO, dog);
 	}
 	
 }

@@ -7,6 +7,7 @@ package com.machineghost.designPatterns.creational.prototype;
 public class GoldFish extends Animal {
 	
 	private String swimSpeed;
+	private String feedingTime;
 
 	public String getSwimSpeed() {
 		return swimSpeed;
@@ -14,5 +15,13 @@ public class GoldFish extends Animal {
 
 	public void setSwimSpeed(String swimSpeed) {
 		this.swimSpeed = swimSpeed;
+	}
+
+	public String getFeedingTime() {
+		return feedingTime;
+	}
+
+	public void setFeedingTime(String feedingTime) {
+		this.feedingTime = feedingTime;
 	}
 }
