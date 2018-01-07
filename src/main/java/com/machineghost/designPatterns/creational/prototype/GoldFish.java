@@ -17,6 +17,7 @@ public class GoldFish extends Animal {
 		this.swimSpeed = swimSpeed;
 	}
 
+	@Override
 	public String getFeedingTime() {
 		return feedingTime;
 	}

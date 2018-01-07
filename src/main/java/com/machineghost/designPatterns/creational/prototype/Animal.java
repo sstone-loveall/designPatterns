@@ -13,6 +13,8 @@ public abstract class Animal implements Cloneable {
 		return super.clone();
 	}
 	
+	public abstract String getFeedingTime();
+	
 	public String getSpecies() {
 		return species;
 	}

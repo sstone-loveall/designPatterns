@@ -13,6 +13,7 @@ public class Doggo extends Animal {
 		this.playTime = playTime;
 	}
 
+	@Override
 	public String getFeedingTime() {
 		return feedingTime;
 	}

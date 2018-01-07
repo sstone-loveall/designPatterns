@@ -17,6 +17,7 @@ public class HouseCat extends Animal {
 		this.napTime = napTime;
 	}
 
+	@Override
 	public String getFeedingTime() {
 		return feedingTime;
 	}
