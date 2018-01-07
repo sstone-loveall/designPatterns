@@ -11,11 +11,16 @@ import com.machineghost.designPatterns.structural.decorator.*;
 public class FacadeDemo {
 	
 	public static void main(String[] args) {
+		
+		// For a neighborhood pet sitter, compile all client animals needs
+		
 		PetCareLister instructions = new PetCareLister();
 		instructions.addPet("catFamily1", AnimalType.HOUSECAT, "morning", new AdultRegimen());
 		instructions.addPet("catFamily2", AnimalType.HOUSECAT, "evening", new YouthRegimen());
 		instructions.addPet("dogFamily3", AnimalType.DOGGO, "morning", new ShinyCoatRegimen(new AdultRegimen()));
 		instructions.addPet("fishFamily4", AnimalType.GOLDFISH, "afternoon", new AdultRegimen());
+		
+		// print the care instructions for all the animals
 		System.out.println(instructions.listPetCareInstructions());
 	}
 }
