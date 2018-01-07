@@ -14,6 +14,6 @@ public class ExtraVitaminsRegimen implements IRegimenDecorator {
 	}
 	
 	public String getRegimen() {
-		return this.baseRegimen.getRegimen() + ", supplemental vitamins added for bonus nutrition.";
+		return this.baseRegimen.getRegimen() + ", supplemental vitamins added for bonus nutrition";
 	}
 }

@@ -14,6 +14,6 @@ public class ShinyCoatRegimen implements IRegimenDecorator {
 	}
 	
 	public String getRegimen() {
-		return this.baseRegimen.getRegimen() + ", supplemental amino acids added for coat health.";
+		return this.baseRegimen.getRegimen() + ", supplemental amino acids added for coat health";
 	}
 }
