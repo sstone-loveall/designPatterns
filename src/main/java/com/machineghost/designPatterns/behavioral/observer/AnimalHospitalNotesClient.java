@@ -8,12 +8,11 @@ public class AnimalHospitalNotesClient extends Observer {
 	}
 	
 	public void addNote(String note) {
-		subject.setState("Animal Hospital note logged: " + note);
+		subject.setState("Animal Hospital: " + note);
 	}
 	
 	@Override
 	protected void update() {
-		System.out.println("Animal Hospital Notes Source: " + subject.getState());
-
+		System.out.println("Animal Hospital Notes Client is aware of note: " + subject.getState());
 	}
 }
