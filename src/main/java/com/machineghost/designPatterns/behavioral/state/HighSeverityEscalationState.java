@@ -12,7 +12,18 @@ public class HighSeverityEscalationState extends EscalationState {
 	protected void handleRequest() {
 		System.out.println("Escalation triggered");
 		
-		// Do nothing. There are no higher escalation states.
+		// There are no higher escalation states.
 		System.out.println("Alert remains in : " + alert.toString());
+		
+		sendEmail();
+		sendTextMessages();
+	}
+	
+	private void sendEmail() {
+		// stub
+	}
+	
+	private void sendTextMessages() {
+		// stup
 	}
 }

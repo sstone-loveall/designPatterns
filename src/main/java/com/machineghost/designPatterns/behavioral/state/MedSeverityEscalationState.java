@@ -17,5 +17,10 @@ public class MedSeverityEscalationState extends EscalationState {
 	protected void handleRequest() {
 		System.out.println("Escalation triggered");
 		alert.setState(alert.getHighSeverityState());
+		sendEmail();
+	}
+	
+	private void sendEmail() {
+		// stub
 	}
 }
