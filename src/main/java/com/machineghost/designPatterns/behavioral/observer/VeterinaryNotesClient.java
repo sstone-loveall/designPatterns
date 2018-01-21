@@ -14,7 +14,5 @@ public class VeterinaryNotesClient extends Observer {
 	@Override
 	protected void update() {
 		System.out.println("Veterinary Notes Client is aware of note: " + subject.getState());
-
 	}
-
 }
