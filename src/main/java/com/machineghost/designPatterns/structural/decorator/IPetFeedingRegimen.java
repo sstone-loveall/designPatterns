@@ -6,7 +6,5 @@ package com.machineghost.designPatterns.structural.decorator;
  *
  */
 public interface IPetFeedingRegimen {
-	//public String regimenDescription;
-	
 	public String getRegimen();
 }
